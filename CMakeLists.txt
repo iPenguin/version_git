@@ -1,3 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+
+project("version_from_git")
+
 # Appends the cmake/modules path to MAKE_MODULE_PATH variable.
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 
@@ -18,7 +22,9 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/version.cpp.in
                 ${CMAKE_CURRENT_BINARY_DIR}/version.cpp)
 set(version_file "${CMAKE_CURRENT_BINARY_DIR}/version.cpp")
 
+set(source_files "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
+
 #Add the version_file to the project build.
-add_executable(${PROJECT_NAME} ${source_files} ${ui_files} ${version_file})
+add_executable(${PROJECT_NAME} ${source_files} ${version_file})
 
 

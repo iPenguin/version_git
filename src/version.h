@@ -1,9 +1,9 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#include <QString>
+#include <string>
 
-extern const QString gGIT_VERSION;
-extern const QString gGIT_VERSION_SHORT;
+extern const std::string gGIT_VERSION;
+extern const std::string gGIT_VERSION_SHORT;
 
 #endif //VERSION_H

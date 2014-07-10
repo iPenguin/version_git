@@ -1,4 +1,4 @@
 #include "../src/version.h" //update as appropriate
 
-const QString gGIT_VERSION = "@VERSION@";
-const QString gGIT_VERSION_SHORT = "@VERSION_SHORT@";
+const std::string gGIT_VERSION = "@VERSION@";
+const std::string gGIT_VERSION_SHORT = "@VERSION_SHORT@";
