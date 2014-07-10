@@ -5,6 +5,6 @@
 main () 
 {
 
-std::cout << gGIT_VERSION << gGIT_VERSION_SHORT;
+std::cout << gGIT_VERSION << std::endl << gGIT_VERSION_SHORT << std::endl;
 	
 }
