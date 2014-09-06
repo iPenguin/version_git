@@ -2,4 +2,14 @@ This is a simple repository that uses git describe and cmake to automatically as
 
 It is provided under the MIT license.
 
+Do the following to test it:
+
+    cd version_git
+
+    mkdir build && cd build
+
+    cmake ..
+
+    make
+
 
